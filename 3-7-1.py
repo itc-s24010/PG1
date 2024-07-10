@@ -1,0 +1,21 @@
+with open('sample.txt', 'r') as f:
+    line = f.readline()
+    print(line)
+
+with open('sample.txt', 'r') as f:
+    lines = f.readlines()
+    print(line)
+
+with open('sample.txt', 'r') as f:
+    lines = f.readline()
+    print(line)
+
+with open('sample2.txt','w') as f:
+    f.write('test')
+
+with open('sample2.txt','a') as f:
+    f.write('test2')
+
+with open('sample.txt','r') as f:
+    for line in f:
+        print(line.strip())
